@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 driver.get("https://encrypted.google.com")
 assert "Google" in driver.title
 elem = driver.find_element_by_name("q")
@@ -16,4 +16,4 @@ wait = WebDriverWait(driver, 10)
 
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "res")))
 
-driver.quit()
+#driver.quit()
