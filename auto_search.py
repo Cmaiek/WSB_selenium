@@ -16,4 +16,4 @@ wait = WebDriverWait(driver, 10)
 
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "res")))
 
-#driver.quit()
+driver.quit()
